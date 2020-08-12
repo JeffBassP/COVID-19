@@ -3,7 +3,7 @@ const loadCountries = async () => {
     const dropdownContent = document.getElementById('dropdown-content');
     const countryListed = [];
     data.forEach(element => countryListed.push(element));
-   
+
     countryListed.forEach(item => {
         const countries = createList(item);
         dropdownContent.insertAdjacentHTML('beforeend', countries);
@@ -11,33 +11,32 @@ const loadCountries = async () => {
 
 }
 
-const loadDetails = async(CountryCode) => {
+const loadDetails = async (CountryCode) => {
     const countries = await detailsCountry();
-  
+
 
 
     let pais = [];
-    for(let i = 0; i< countries.length; i++){
-        if(countries[i].CountryCode == CountryCode){
+    for (let i = 0; i < countries.length; i++) {
+        if (countries[i].CountryCode == CountryCode) {
             pais = countries[i];
         }
     }
     const detailsContainer = document.getElementById('details-container')
-   
+
     const showDetails = createDetails(pais);
     detailsContainer.insertAdjacentHTML('beforeend', showDetails);
 
 
 }
-/* 
 
-    const details = await detailsCountry(country);
-    const detailsContainer = document.getElementById('details-container');
+loadWorld = async () => {
+    const world = await worldCases();
 
-    console.log(details);
-    const showDetails = createDetails(details);
-    detailsContainer.insertAdjacentHTML('beforeend', showDetails);
-    
-} */
+    const detailsContainer = document.getElementById('details-container')
+
+    const showDetails = createDivWorld(world);
+    detailsContainer.insertAdjacentHTML("beforeend", showDetails);
+}
 
 loadCountries();

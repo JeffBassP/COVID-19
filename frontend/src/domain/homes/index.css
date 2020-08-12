@@ -33,6 +33,22 @@ li a:hover {
   color: white;
 }
 
+li div {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li div:hover {
+  background-color: #f1f1f1;
+  
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
  .main-container{
      display: flex;
      flex-wrap: wrap;

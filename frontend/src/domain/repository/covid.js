@@ -23,6 +23,13 @@ const detailsCountry = async () => {
     return countries.Countries;
 }
 
+const worldCases = async () => {
+    const URL = `${defaultURL}summary`;
+    const result = await axios.get(URL);
 
+    const world = result.data;
+
+    return world.Global
+}
 
 
