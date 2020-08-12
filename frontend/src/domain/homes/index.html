@@ -6,19 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
 
+
     <script src="./../repository/covid.js" defer></script>
     <script src="index.js" defer></script>
     <script src="./../../common/helper/functions.js" defer></script>
 
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
 
     <title>COVID 19</title>
 </head>
 
 <body>
+
+    <ul>
+        <li><a class="active" href="index.html">COVID 19</a></li>
+        <li><a href="#news">MUNDO</a></li>
+        <li><a href="#contact">PAISES</a></li>
+        <li><a href="#news">MELHORES PRATICAS</a></li>
+
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="choose-country"><H1>Escolha um País para verificar os números do COVID.</H1></div>
     <div id="main-container" class="main-container">
         <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
+            <button class="dropbtn">Lista de Paises </button>
 
             <div class="dropdown-content" id="dropdown-content">
 
@@ -27,9 +54,20 @@
 
     </div>
 
-    <div id="details-container" class="details-container">
-        
-    </div>
+    <center>
+        <div id="details-container" class="details-container">
+
+        </div>
+    </center>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Desenvolvido por Jeferson Filipe Sergio</small>
+            <a href="https://www.facebook.com/jeffjambass" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/jeferson-filipe-sergio-8568051a0/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/JeffBassP" class="fa fa-github"></a>
+        </div>
+    </footer>
 </body>
+
 
 </html>
