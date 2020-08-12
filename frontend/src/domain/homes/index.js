@@ -9,7 +9,7 @@ const loadCountries = async () => {
     
     countryListed.forEach(item => {
         const countries = createList(item);
-        dropdownContent.insertAdjacentHTML('beforeend', countries);
+        dropdownContent.insertAdjacentHTML('afterbegin', countries);
     });
 
 }
@@ -43,3 +43,21 @@ const loadWorld = async () => {
     const detailsContainer = document.getElementById('details-container').innerHTML = showDetails;
 }
 
+const loadBrazil = async() =>{
+    const countries = await detailsCountry();
+   
+    let brasil = [];
+    for (let i = 0; i < countries.length; i++) {
+        if (countries[i].CountryCode == 'BR') {
+            brasil = countries[i];
+        }
+    }
+    const showDetails = createDetails(brasil);
+    // detailsContainer.insertAdjacentHTML('beforeend', showDetails);
+    const detailsContainer = document.getElementById('details-container').innerHTML = showDetails;
+} 
+
+const loadCovid = () =>{
+    const showCovid = createCovid();
+    const detailsContainer = document.getElementById('details-container').innerHTML = showCovid;
+}

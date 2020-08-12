@@ -1,17 +1,16 @@
 body {
-     background-color: black !important;
-     color: white;
-     background: black url('./../../common/helper/coronavirusWALLPAPER2.jpg')  ;
-     background-size: 100%;
-     
- }
+  background-color: black !important;
+  color: white;
+  background: black url('./../../common/helper/coronavirusWALLPAPER2.jpg');
+  background-size: 100%;
+}
 
- ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#343a40;
+  background-color: #343a40;
 }
 
 li {
@@ -28,7 +27,6 @@ li a {
 
 li a:hover {
   background-color: #f1f1f1;
-  
   text-decoration: none;
   color: white;
 }
@@ -43,124 +41,155 @@ li div {
 
 li div:hover {
   background-color: #f1f1f1;
-  
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
 
- .main-container{
-     display: flex;
-     flex-wrap: wrap;
-     align-content: flex-start;
- }
-.nav-button{
-  
-    cursor: pointer !important;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
-.main-container{
+
+.nav-button {
+  cursor: pointer !important;
+}
+
+.main-container {
   justify-content: center;
 }
+
 .dropbtn {
+  background-color: #343a40;
+  overflow: auto;
+  width: 300px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-    background-color: #343a40;
-    overflow: auto;
-    width: 300px;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content div {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content div:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #808080;
-  }
+/* The container <div> - needed to position the dropdown content */
 
-  .country{
-      cursor: pointer;  
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  .fa{
-    color: white;
-  }
-  .fa:hover{
-    color: #808080;
-    text-decoration: none;
-  }
-  .details-container{
-    color: white;
-  }
+/* Dropdown Content (Hidden by Default) */
 
-  .boxdetails{
-    margin: 30px;
-    background-color: #343a40;
-    border: 1px solid black;
-    display: inline-flex;
-    width: 300px;
-    height: 200px;
-    opacity: 0.9;
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  .flag{
-    width: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  small{
-    color: white;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  height: 300px;
+  z-index: 1;
+}
 
-  #sticky-footer{
-    position: fixed;
-    text-align: center;
-    width: 100%;
-   bottom: 0px;
-  }
-  .results{
-    font-size: 25px;
-  }
-  .choose-country
-  {
-    color: white;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    background-color: #343a40;
-  }
+/* Links inside the dropdown */
+
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+  background-color: #808080;
+}
+
+.country {
+  cursor: pointer;
+}
+
+.fa {
+  color: white;
+}
+
+.fa:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+.details-container {
+  color: white;
+}
+
+.boxdetails {
+  margin: 30px;
+  background-color: #343a40;
+  border: 1px solid black;
+  display: inline-flex;
+  width: 300px;
+  height: 200px;
+  opacity: 0.9;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag {
+  width: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+small {
+  color: white;
+}
+
+#sticky-footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+.results {
+  font-size: 25px;
+}
+
+.choose-country {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #343a40;
+}
+
+.show-covid {
+  font-size: 20px;
+  border: 1px black solid;
+  background: #343a40;
+  margin: 20px;
+  padding: 10px;
+}
+.listaCovid{
+  float: none;
+  list-style: disc;
+}
+
+.ul-covid{
+  list-style: disc;
+}
