@@ -90,7 +90,7 @@ return div;
 
 const createCovid = () =>{
     const div = `
-    <div class="show-covid">
+    <div class="show-text">
     <h1>O que é COVID-19</h1>
     <span>
     Os coronavírus são uma grande família de vírus comuns em muitas espécies diferentes de animais, 
@@ -140,4 +140,18 @@ const createCovid = () =>{
     </div>  `;
 
      return div;
+}
+const createAbout = () =>{
+    const div = `
+    <div class="show-text">
+    <span>
+    Este site foi criado a pedido da escola Arbyte, afim de avaliar o conhecimento adquirido no 
+    decorrer do curso.
+    O site foi feito usando JavaScript e CSS e a leitura de API a partir do site 
+    <a href:"https://api.covid19api.com/">covid19api.com</a>.
+
+    </span>
+    </div>`;
+
+    return div;
 }

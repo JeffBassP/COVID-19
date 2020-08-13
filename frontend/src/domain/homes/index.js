@@ -39,7 +39,7 @@ const loadWorld = async () => {
 
 
     const showDetails = createDivWorld(world);
-    //detailsContainer.insertAdjacentHTML("beforebegin", showDetails);
+    
     const detailsContainer = document.getElementById('details-container').innerHTML = showDetails;
 }
 
@@ -60,4 +60,10 @@ const loadBrazil = async() =>{
 const loadCovid = () =>{
     const showCovid = createCovid();
     const detailsContainer = document.getElementById('details-container').innerHTML = showCovid;
+}
+
+const about = () =>{
+    const showAbout = createAbout();
+    const detailsContainer = document.getElementById('details-container').innerHTML = showAbout;
+
 }
