@@ -103,7 +103,7 @@ const createCovid = () =>{
      </div>
      
      
-     <div class="show-covid">
+     <div class="show-text">
      <h1>Quais são os sintomas</h1>
     <span>
     Os sintomas da COVID-19 podem variar de um resfriado, a uma Síndrome Gripal-SG (presença de um quadro respiratório agudo, caracterizado por, pelo menos dois dos seguintes sintomas: sensação febril ou 
@@ -123,7 +123,7 @@ const createCovid = () =>{
     <li class="listaCovid">Dispnéia ( falta de ar)</li>
     </ul>
      </div>
-     <div class="show-covid">
+     <div class="show-text">
     <h1>Como é transmitido</h1>
     <span>
     A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:
@@ -137,7 +137,10 @@ const createCovid = () =>{
     <li class="listaCovid">Catarro;</li>
     <li class="listaCovid">Objetos ou superfícies contaminadas, como celulares, mesas, talheres,
      maçanetas, brinquedos, teclados de computador etc.</li>
-    </div>  `;
+    </div>  
+    <br>
+    <br>
+    <br>`;
 
      return div;
 }
