@@ -1,6 +1,6 @@
 const loadCountries = async () => {
 
-    const mainContainer = document.getElementById('main-container');
+    const mainContainer = document.getElementById('details-container');
     mainContainer.innerHTML = createDropdown();
     const { data } = await listCountries();
     const dropdownContent = document.getElementById('dropdown-content');
