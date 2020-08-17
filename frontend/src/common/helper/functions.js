@@ -151,7 +151,7 @@ const createAbout = () =>{
     Este site foi criado a pedido da escola Arbyte, afim de avaliar o conhecimento adquirido no 
     decorrer do curso.
     O site foi feito usando JavaScript e CSS e a leitura de API a partir do site 
-    <a href:"https://api.covid19api.com/">covid19api.com</a>.
+    <a href:"https://api.covid19api.com/">covid19api.com</a>.<br>
     Todas as informações são recebidas pelo Intituto de Pesquisa John Hopkins.
 
     </span>
