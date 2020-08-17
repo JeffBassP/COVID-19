@@ -140,7 +140,7 @@ const createCovid = () =>{
     </div>  
     <br>
     <br>
-    <br>`;
+    <br>    `;
 
      return div;
 }
